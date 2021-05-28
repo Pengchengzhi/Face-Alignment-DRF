@@ -1,7 +1,7 @@
 # Face-Alignment-DRF
 ## 5.27 周四 日志早该开始写的，算了，从今天起也不晚
 * 增加 GPU 部分，CNN 可以在 CUDA 上跑了
-* 调通了训练部分代码，但 Loss 基本没动，输出很小，基本是 Mean Face.
+* 调通了训练部分代码，但 Loss 基本没动，CNN 输出很小，做 Loss 的时候基本是 Mean Face.
 ## 5.28 周五
 * 多变量高斯求 pdf 的函数原来用的是 scipy 库，但它只能 cpu 运行，且不支持输入矩阵。找到 torch.distributions 里有替代品，现在整个模型都能在 GPU 上跑了。
 * 应该在开头定义 device 全局变量，免得一个变量一个变量的搬运到 cpu 或者 cuda。
