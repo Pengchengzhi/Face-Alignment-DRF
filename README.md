@@ -5,6 +5,8 @@
 * PCA 是否是模型精度的天花板，即模型最精确也只能达到 PCA 的误差？
 * Test set 是否需要切割人脸。
 * Train set 切割人脸采用 landmarks 坐标，导致很多点在切割之后的边缘，是否需要限制长宽比之类，修正切割框的位置。
+# Questions
+* 感觉不需要 Iterative training, 先训 gaussian 再训 CNN 即可？
 # 日志
 <details>
 <summary>  <b> 5.26-5.30 </b > </summary>
