@@ -1,4 +1,13 @@
 # Face-Alignment-DRF
+<details>
+<summary>5.27-5.30</summary>
+
+周记
+  * 这是洲际
+  
+</code></pre>
+</details>
+
 ## 5.27 周四
 * 早就应该开始写了，算了，从今天开始也不晚。
 * 增加 GPU 部分，CNN 可以在 CUDA 上跑了。
