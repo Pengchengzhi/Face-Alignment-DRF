@@ -2,7 +2,7 @@
 
 # 进度
 <details>
-<summary> <h2> <b> 5.27-5.30 </b ></h2> </summary>
+<summary> <font size=1> <b> 5.27-5.30 </b ></font> </summary>
 
 ## 5.27 周四
 * 早就应该开始写了，算了，从今天开始也不晚。
