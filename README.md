@@ -1,12 +1,6 @@
 # Face-Alignment-DRF
 <details>
-<summary>5.27-5.30</summary>
-
-周记
-  * 这是洲际
-  
-</code></pre>
-</details>
+<summary># 5.27-5.30</summary>
 
 ## 5.27 周四
 * 早就应该开始写了，算了，从今天开始也不晚。
@@ -22,6 +16,11 @@
 * 发现 CNN 输出一直很小，尝试把数据缩减为 2 维，用 EM 算法使多元正太收敛。缩减为二维以后可以画散点图帮助 debug. 结果证明，即便是二维的情况也无法收敛。仔细检查 EM 算法，没有问题。发现乘以了系数 pi 导致点全部缩到原点。CNN 输出一直很小的原因查明，解决方案待定。
 ## 5.29 周六
 * Gaussian 部分的 Inference 有问题, pi 的意义不对。
+  
+</code></pre>
+</details>
+
+
 
 
 
