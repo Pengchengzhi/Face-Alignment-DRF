@@ -9,6 +9,24 @@
 * 感觉不需要 Iterative training, 先训 gaussian 再训 CNN 即可？
 # 日志
 <details>
+<summary>  <b> Weekly </b > </summary>
+## 4.30-5.02
+考完试休息两天，补觉，倒回时差。
+
+## 5.03-5.09 
+找房租房搬家，写大作业结课报告，补觉。
+  
+## 5.10-5.16
+读文献，看大家做 Face Alignment 用什么数据集、用什么指标评价、用什么方法。
+
+## 5.17-5.23
+细读与我方法有关的文献。完成裁剪人脸、裁剪特征点、PCA，Procuses Analysis 代码。
+
+## 5.24-5.30
+写完 Gaussian Regression Tree 代码 (Sequential)，得到初步结果。
+</details>
+  
+<details>
 <summary>  <b> 5.26-5.30 </b > </summary>
   
 ## 5.26 周三 (6.5h)
