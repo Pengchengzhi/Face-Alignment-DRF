@@ -7,11 +7,8 @@
 * Train set 切割人脸采用 landmarks 坐标，导致很多点在切割之后的边缘，是否需要限制长宽比之类，修正切割框的位置。
 # Questions
 * 感觉不需要 Iterative training, 先训 gaussian 再训 CNN 即可？
-# 日志
-<details>
-<summary>  <b> Weekly </b > </summary>
-## 4.30-5.02
-考完试休息两天，补觉，倒回时差。
+# Weekly
+<b>4.30-5.02</b>: 考完试休息两天，补觉，倒回时差。
 
 ## 5.03-5.09 
 找房租房搬家，写大作业结课报告，补觉。
@@ -24,8 +21,8 @@
 
 ## 5.24-5.30
 写完 Gaussian Regression Tree 代码 (Sequential)，得到初步结果。
-</details>
-  
+
+# 日志
 <details>
 <summary>  <b> 5.26-5.30 </b > </summary>
   
