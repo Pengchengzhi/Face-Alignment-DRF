@@ -16,9 +16,9 @@
 
 <b>5.17-5.23</b>: 细读与我方法有关的文献。完成裁剪人脸、裁剪特征点、PCA，Procuses Analysis 代码。
 
-<b>5.24-5.30</b>: 写完 Gaussian Regression Tree 代码 (Sequential)，得到初步结果。
+<b>5.24-5.30</b>: 实现 Gaussian Regression Tree 方法 (Sequential)，得到初步结果。
 
-
+<b>5.31-6.06</b>: 实现 Gaussian Regression Tree 方法 (Iterative)，结果误差很大且难收敛。
 
 # 日志
 <details>
