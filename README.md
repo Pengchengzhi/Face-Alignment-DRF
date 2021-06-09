@@ -10,15 +10,15 @@
 # Weekly
 **4.30-5.02**: 考完试休息两天，补觉，倒回时差。
 
-<b>5.03-5.09</b>: 找房租房搬家，写大作业结课报告，补觉。
+**5.03-5.09**: 找房租房搬家，写大作业结课报告，补觉。
 
-<b>5.10-5.16</b>: 读文献，看大家做 Face Alignment 用什么数据集、用什么指标评价、用什么方法。
+**5.10-5.16**: 读文献，看大家做 Face Alignment 用什么数据集、用什么指标评价、用什么方法。
 
-<b>5.17-5.23</b>: 细读与我方法有关的文献。完成裁剪人脸、裁剪特征点、PCA，Procuses Analysis 代码。
+**5.17-5.23**: 细读与我方法有关的文献。完成裁剪人脸、裁剪特征点、PCA，Procuses Analysis 代码。
 
-<b>5.24-5.30</b>: 实现 Gaussian Regression Tree 方法 (Sequential)，得到初步结果。
+**5.24-5.30**: 实现 Gaussian Regression Tree 方法 (Sequential)，得到初步结果。
 
-<b>5.31-6.06</b>: 实现 Gaussian Regression Tree 方法 (Iterative)，结果误差很大且难收敛。
+**5.31-6.06**: 实现 Gaussian Regression Tree 方法 (Iterative)，结果误差很大且难收敛。
 
 # 日志
 <details>
