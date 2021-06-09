@@ -51,7 +51,6 @@
 * 跟老师聊了会天，可能思路要变，得换方法。
 * 几篇文章要看，“Look at boundary""label distribution learning""Does Learning Specific Feature for Related Parts help" 以及想看的 Capsule Net 相关文章。
    
-</code></pre>
 </details>
 
 <details>
@@ -92,7 +91,6 @@
 ## 6.06 周日 (2h)
 * 看书三分之一本，照此进度有望本月看完。
   
-</code></pre>
 </details>
 
 ## 6.07 周一 (8h)
@@ -111,6 +109,8 @@
 
 ## 6.09 周三 (xh)
 * 把 Heatmap 由所有点一张图改为每个点一张图，写代码。这样还有个好处，就是如果后面需要把相关性强的点分组回归，自然需要一个点一张 Heatmap.
+* 改为一个点一张 Heatmap 以后计算量陡增，难以收敛。且学习 Distribution 似乎失去了意义，因为只有一张图只有一个目标点，变成 one-hot label.
+* 观察到不同 Leaf node 差别不大，cnn 输出也在 0.5 附近，可知基本无筛选，算法并未收敛。重新研究如何优化 leaf node，采用 pinv 还是 step by step. 
 
 
 <details>
@@ -121,7 +121,6 @@
 
 ## 6.15 周二 (xh)
 
-</code></pre>
 </details>
 
 
