@@ -107,10 +107,22 @@
 * 改完 Heatmap Regression 训练部分代码，现在能输出比较像样的热图。下一步，从热图找到特征点坐标。直接 topk() 存在全局最大无法代表局部最大的问题，如果用动态阈值扫描，还需要考虑两个点相距很近的情况。
 * 想到，即便找出特征点坐标，也没法排序。不排序就不知道哪个点是眼角，无法计算 NME Loss。这才明白，为什么人家都是每个特征点做一个 Heatmap. 既能减小预测误差，又能知道顺序。
 
-## 6.09 周三 (xh)
+## 6.09 周三 (9h)
 * 把 Heatmap 由所有点一张图改为每个点一张图，写代码。这样还有个好处，就是如果后面需要把相关性强的点分组回归，自然需要一个点一张 Heatmap.
 * 改为一个点一张 Heatmap 以后计算量陡增，难以收敛。且学习 Distribution 似乎失去了意义，因为只有一张图只有一个目标点，变成 one-hot label.
 * 观察到不同 Leaf node 差别不大，cnn 输出也在 0.5 附近，可知基本无筛选，算法并未收敛。重新研究如何优化 leaf node，采用 pinv 还是 step by step. 
+
+## 6.10 周四 (xh)
+* 今天是 Math Day. 1) KL Divergence & Entropy & Cross Entropy; 2) LLS $ Pseudo Inverse; 3) Jensen's inequality; 4) Convex optimization & Lagrangian.
+
+
+
+
+
+
+
+
+
 
 
 <details>
