@@ -93,6 +93,8 @@
   
 </details>
 
+<details>
+<summary>  <b> 5.26-5.30 </b > </summary>
 ## 6.07 周一 (8h)
 * 收敛了，代码完全没改过。来实验室第一件事，把上次的代码跑一遍看看。周末没想到还有什么可能的原因导致 CNN 输出一致，就给自己放了两天假，结果今天问题消失了。Adam 优化器，lr: 3e-4，其实这组参数上周五试过，不行，但今天就有了。神奇。把结果保存下来。本来已经做好了搞体力活的准备，挨个检查输出是不是跟手算的一样，检查梯度啥的，看来不用了。但稳定性为什么会是个问题，原因尚不明确，代码不能复现也不行啊。
 
@@ -115,24 +117,31 @@
 ## 6.10 周四 (7.5h)
 * 今天是 Math Day. 1) KL Divergence & Entropy & Cross Entropy; 2) Linear Least Square & Pseudo Inverse; 3) Jensen's Inequality; 4) Convex Optimization & Lagrangian & Duality.
 
-## 6.11 周五（Xh)
+## 6.11 周五 (5h)
 * 组会，提出几个新思路，后续改进。1）backbone 用 pretrain 人脸检测 model。2）backbone 用 Hourglass。 3）CNN FC 直接出 Heatmap 看看能否收敛。
 
+## 6.12 周六 (0h)
+* 补觉
 
+## 6.13 周日 (0h)
+* 补觉
 
-
-
-
-
-
-
-<details>
-<summary>  <b> 6.14-6.20 </b > </summary>
+</details>
 
 ## 6.14 周一 (xh)
 
 
 ## 6.15 周二 (xh)
+
+
+
+<details>
+<summary>  <b> 6.14-6.20 </b > </summary>
+## 6.21 周一 (xh)
+
+
+## 6.22 周二 (xh)
+
 
 </details>
 
