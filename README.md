@@ -7,12 +7,12 @@
 * Train set 切割人脸采用 landmarks 坐标，导致很多点在切割之后的边缘，是否需要限制长宽比之类，修正切割框的位置。
 * 感觉不需要 Iterative training, 先训 gaussian 再训 CNN 即可？
 # Weekly
+<center>
 | Time | Achievements |
 |  :----:  | :----  |
 | **4.30-5.02** | 考完试休息两天，补觉，倒回时差。 |
-
 | **5.03-5.09** | 找房租房搬家，写大作业结课报告，补觉。|
-
+</center>
 **5.10-5.16**: 读文献，看大家做 Face Alignment 用什么数据集、用什么指标评价、用什么方法。
 
 **5.17-5.23**: 细读与我方法有关的文献。完成裁剪人脸、裁剪特征点、PCA，Procuses Analysis 代码。
