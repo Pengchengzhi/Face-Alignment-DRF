@@ -16,6 +16,7 @@
 | **5.17-5.23** | 细读与我方法有关的文献。完成裁剪人脸、裁剪特征点、PCA，Procuses Analysis 代码。|
 | **5.24-5.30** | 实现 Gaussian Regression Tree 方法 (Sequential)，得到初步结果。|
 | **5.31-6.06** | 实现 Gaussian Regression Tree 方法 (Iterative)，结果误差很大且难收敛。搞清楚了数据集，全部下载到手。|
+| **6.07-6.13** | 实现 Heatmap Regression，所有待检测点在一张图上。后发现无法 argmax，改为每个点一张 Heatmap，拟合效果还是很差。|
 
 # 日志
 <details>
@@ -125,11 +126,12 @@
 
 </details>
 
-## 6.14 周一 (xh)
-
+## 6.14 周一 (2h)
+* 看文献 Hourglass. 欢度端午，跟同学进城吃饭压马路。
 
 ## 6.15 周二 (xh)
-
+* 看 Hourglass 文献和代码。
+* 重新裁剪图片，大小由 224\*224 改为 256\*256，修正之前出现的，test label 越界问题。 
 
 
 <details>
