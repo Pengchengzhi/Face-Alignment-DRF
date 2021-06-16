@@ -136,13 +136,17 @@
 ## 6.16 周三 (xh)
 * 完成 DataLoader 加载数据。测试的时候老是“因为占满所有可用 RAM ”崩溃，后修改完善，避免定义过大的数组，且将重复不变的部分放在 init() 函数里，节约时间。
 
-## 6.17 周四 (xh) 搞定 Hourglass Backbone
+## 6.17 周四 (xh) 
+* Goal: 搞定 Hourglass Backbone
 
-## 6.18 周五 (xh) 跑结果
+## 6.18 周五 (xh) 
+* Goal: 跑结果
 
-## 6.19 周六 (xh) 看 Capsnet, 准备下周汇报
+## 6.19 周六 (xh) 
+* Goal: 看 Capsnet, 准备下周汇报
 
-## 6.20 周日 (xh) 做完下周 Paper Reading PPT
+## 6.20 周日 (xh) 
+* Goal: 做完下周 Paper Reading PPT
 
 <details>
 <summary>  <b> 6.21-6.27 </b > </summary>
