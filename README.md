@@ -129,10 +129,20 @@
 * 看文献 Hourglass. 
 * 欢度端午，跟同学进城吃饭压马路。
 
-## 6.15 周二 (xh)
+## 6.15 周二 (7.5h)
 * 看 Hourglass 文献和代码。
 * 重新裁剪图片，大小由 224\*224 改为 256\*256，顺带修正 test label 越界问题。 
 
+## 6.16 周三 (xh)
+* 完成 DataLoader 加载数据。测试的时候老是“因为占满所有可用 RAM ”崩溃，后修改完善，避免定义过大的数组，且将重复不变的部分放在 init() 函数里，节约时间。
+
+## 6.17 周四 (xh) 搞定 Hourglass Backbone
+
+## 6.18 周五 (xh) 跑结果
+
+## 6.19 周六 (xh) 看 Capsnet, 准备下周汇报
+
+## 6.20 周日 (xh) 做完下周 Paper Reading PPT
 
 <details>
 <summary>  <b> 6.21-6.27 </b > </summary>
