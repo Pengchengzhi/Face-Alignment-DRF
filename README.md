@@ -140,8 +140,8 @@
 ## 6.17 周四 (xh) 
 * 将 Hourglass Backbone 和 Regression Tree 拼在一起， Iterative Training. 代码跑通。
 * 发现 testset 图片裁剪不对，重新整理数据集。
-* 训练时总报错 cuda memory 不足，发现是 fc 层过大，重新调整网络结构。又发现以 Relu 结尾，杀掉一半神经元，修改为 torch.abs。
-* 效果还是很烂，heatmap 分散。
+* 训练时总报错 cuda memory 不足，发现是 fc 层过大，重新调整网络结构。又发现，之前因为要得到概率，网络输出须为正，遂以 Relu 结尾，结果杀掉了一半神经元，于是修改为绝对值。
+* 效果还是很烂，leaf node 里 heatmap 分散，且 Hourglass 训练时 Loss 不动。
 
 ## 6.18 周五 (xh) 
 * Goal: 跑结果
