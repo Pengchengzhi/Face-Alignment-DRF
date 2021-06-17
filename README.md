@@ -133,8 +133,9 @@
 * 看 Hourglass 文献和代码。
 * 重新裁剪图片，大小由 224\*224 改为 256\*256，顺带修正 test label 越界问题。 
 
-## 6.16 周三 (xh)
+## 6.16 周三 (7.5h)
 * 完成 DataLoader 加载数据。测试的时候老是“因为占满所有可用 RAM ”崩溃，后修改完善，避免定义过大的数组，且将重复不变的部分放在 init() 函数里，节约时间。
+* 将 Backbone 更换为 Hourglass，测试直接拟合 Heatmap。实验结果：可以收敛。
 
 ## 6.17 周四 (xh) 
 * Goal: 搞定 Hourglass Backbone
