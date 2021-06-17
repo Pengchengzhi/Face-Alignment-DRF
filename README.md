@@ -7,7 +7,7 @@
 
 # Weekly
 
-| Time | <center>Achievements</center> |
+| Time | <center> Achievements </center> |
 |  :----:  | :----  |
 | **4.30-5.02** | 考完试休息两天，补觉，倒回时差。 |
 | **5.03-5.09** | 找房租房搬家，写大作业结课报告，补觉。|
