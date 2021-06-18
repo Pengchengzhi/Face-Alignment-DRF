@@ -137,14 +137,15 @@
 * 完成 DataLoader 加载数据。测试的时候老是“因为占满所有可用 RAM ”崩溃，后修改完善，避免定义过大的数组，且将重复不变的部分放在 init() 函数里，节约时间。
 * 将 Backbone 更换为 Hourglass，测试直接拟合 Heatmap。实验结果：可以收敛。
 
-## 6.17 周四 (xh) 
+## 6.17 周四 (8.5h) 
 * 将 Hourglass Backbone 和 Regression Tree 拼在一起， Iterative Training. 代码跑通。
 * 发现 testset 图片裁剪不对，重新整理数据集。
 * 训练时总报错 cuda memory 不足，发现是 fc 层过大，重新调整网络结构。又发现，之前因为要得到概率，网络输出须为正，遂以 Relu 结尾，结果杀掉了一半神经元，于是修改为绝对值。
 * 效果还是很烂，leaf node 里 heatmap 分散，且 Hourglass 训练时 Loss 不动。
 
 ## 6.18 周五 (xh) 
-* Goal: 跑结果
+* 组会，发现对 phi 的函数理解错误，从 cnn_fc 到 probability 的映射关系错了。
+* 修改以后重新跑，leaf node 依然相似。被建议加大 decision tree 深度，以及增加 tree 的数量。打算把深度和数量设为可调整的变量，这样代码要改好多部分。
 
 ## 6.19 周六 (xh) 
 * Goal: 看 Capsnet, 准备下周汇报
