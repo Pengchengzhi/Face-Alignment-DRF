@@ -16,6 +16,7 @@
 | **5.24-5.30** | 实现 Gaussian Regression Tree 方法 (Sequential)，得到初步结果。|
 | **5.31-6.06** | 实现 Gaussian Regression Tree 方法 (Iterative)，结果误差很大且难收敛。搞清楚了数据集，全部下载到手。|
 | **6.07-6.13** | 实现 Heatmap Regression，所有待检测点在一张图上。后发现无法 argmax，且无法确定特征点顺序。改为每个点一张 Heatmap，实现代码得到初步结果。拟合效果还是很差。|
+| **6.14-6.20** | 将 Backbone 换成 Hourglass，由于 Pytorch 里没有现成的 Model，所以需要自己找代码自己 pretrain。将 Helen Dataset 封装上 Dataloader。重写 Phi 函数，将 Decision Tree 数量和深度定为全局变量。结论：效果依然不好。|
 
 # 日志
 <details>
