@@ -171,6 +171,10 @@
 * Leaf Node 优化方法可能存在问题。
 
 ## 6.24 周四 (xh)
+* 发现 Label Distribution Learning 里优化 Leaf Node 的 Bounding 的方法，代码写错了。修改以后可以收敛。
+* CNN Loss 与 Decision Tree Loss 还有 Leaf Node 优化方法需要搭配。L2 的话 Leaf Node 是 Pinv, KL Loss 的时候 Leaf Node 用 Bounding 优化。
+* Leaf Node 的 HeatMap 太分散，导致乘上 probability 以后没有聚在一起。考虑强行变成单峰，但这样人工干预太多了。或者考虑把 Leaf Node 都变成单点， Decision Tree 在里边选，看哪个点是 Label，但这样有相当于在 CNN 最后一层就确定了 Landmarks 坐标，Decision Tree 失去意义。
+* 考虑将 xy 分开学习，每个坐标用一个 Label Distribution 或者 Gaussian 拟合。再取 argmax 分别得到 x,y 坐标。
 
 <details>
 <summary>  <b> 6.21-6.27 </b > </summary>
