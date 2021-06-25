@@ -176,6 +176,10 @@
 * Leaf Node 的 HeatMap 太分散，导致乘上 probability 以后没有聚在一起。考虑强行变成单峰，但这样人工干预太多了。或者考虑把 Leaf Node 都变成单点， Decision Tree 在里边选，看哪个点是 Label，但这样有相当于在 CNN 最后一层就确定了 Landmarks 坐标，Decision Tree 失去意义。
 * 考虑将 xy 分开学习，每个坐标用一个 Label Distribution 或者 Gaussian 拟合。再取 argmax 分别得到 x,y 坐标。
 
+## 6.25 周五 (xh)
+* 采用 KL Divergence Loss 的 Iterative Training 的结果出来了，每个 Leaf Node 存的 Heatmap 都是单峰，有一到两个两点，其它值很小。乘以 Probability 以后是若干分散的点，没有聚在一起。原因可能是，GT Heatmap 的 variance 太小，打算调大 variance 试一试。
+* 代码太费时间，跑一遍花 3-4 小时，验证想法需要花挺久。
+
 <details>
 <summary>  <b> 6.21-6.27 </b > </summary>
 ## 6.28 周一 (xh)
