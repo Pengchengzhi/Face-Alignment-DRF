@@ -170,7 +170,7 @@
 * 增加 Mask 以规范 CNN 训练过程，loss 的数值有变小，但还是基本没动，在小数点后六位上略有升高。怀疑是 CNN 未完全训练。调大学习率，从 0.001 至 0.01, SGD, loss 开始下降了。增大训练轮次，发现在 70-100 iterations 的时候 loss 会有相对幅度较大的下降。之前受限于训练时间，CNN 设定为 50 轮。按照现在的设定，跑完一次需要 4 小时。
 * Leaf Node 优化方法可能存在问题。
 
-## 6.24 周四 (xh)
+## 6.24 周四 (7h)
 * 发现 Label Distribution Learning 里优化 Leaf Node 的 Bounding 的方法，代码写错了。修改以后可以收敛。
 * CNN Loss 与 Decision Tree Loss 还有 Leaf Node 优化方法需要搭配。L2 的话 Leaf Node 是 Pinv, KL Loss 的时候 Leaf Node 用 Bounding 优化。
 * Leaf Node 的 HeatMap 太分散，导致乘上 probability 以后没有聚在一起。考虑强行变成单峰，但这样人工干预太多了。或者考虑把 Leaf Node 都变成单点， Decision Tree 在里边选，看哪个点是 Label，但这样有相当于在 CNN 最后一层就确定了 Landmarks 坐标，Decision Tree 失去意义。
