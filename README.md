@@ -159,6 +159,8 @@
 * 会友。
 </details>
 
+<details>
+<summary>  <b> 6.21-6.27 </b > </summary>
 ## 6.21 周一 (0h)
 * 办事。不仅一天都奔波在路上，还起的鬼早，在地铁上站一路没座位。
 * 工作日开门，在我应该上班的时候他们才上班。耽误一个周一，进度又落下了。周六不休息了，在实验室写代码吧。
@@ -176,16 +178,31 @@
 * Leaf Node 的 HeatMap 太分散，导致乘上 probability 以后没有聚在一起。考虑强行变成单峰，但这样人工干预太多了。或者考虑把 Leaf Node 都变成单点， Decision Tree 在里边选，看哪个点是 Label，但这样有相当于在 CNN 最后一层就确定了 Landmarks 坐标，Decision Tree 失去意义。
 * 考虑将 xy 分开学习，每个坐标用一个 Label Distribution 或者 Gaussian 拟合。再取 argmax 分别得到 x,y 坐标。
 
-## 6.25 周五 (xh)
+## 6.25 周五 (7.5h)
 * 采用 KL Divergence Loss 的 Iterative Training 的结果出来了，每个 Leaf Node 存的 Heatmap 都是单峰，有一到两个两点，其它值很小。乘以 Probability 以后是若干分散的点，没有聚在一起。原因可能是，GT Heatmap 的 variance 太小，打算调大 variance 试一试。
 * 代码太费时间，跑一遍花 3-4 小时，验证想法需要花挺久。
+* 跑了 Variance = 5, 效果没太大不同。
 
-<details>
-<summary>  <b> 6.21-6.27 </b > </summary>
+## 6.26 周六 (0.5h)
+* 一天在街上，累。
+* 跑了 Variance = 3, 增大 CNN Iterations = 1000, 效果没太大不同。
+
+## 6.27 周日 (0h)
+* 补觉，恢复精神。了解一桩大事。
+* 跑了 Variance = 3, 增大 dim_tree = 6, Leaf Node 数量多了，效果没太大不同。
+</details>
 ## 6.28 周一 (xh)
 
 
 ## 6.29 周二 (xh)
+
+
+<details>
+<summary>  <b> 7.05-7.11 </b > </summary>
+## 7.05 周一 (xh)
+
+
+## 7.06.29 周二 (xh)
 
 
 </details>
