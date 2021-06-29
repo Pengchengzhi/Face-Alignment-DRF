@@ -203,6 +203,10 @@
 * 朋友到访，畅聊一天。
 
 ## 6.29 周二 (xh)
+* 现在主要问题有两个，一个是更新 Regression Trees 时，loss 会上升。另一个是，以更新一次 CNN 和 Regression Tree 作为一组 Round，每组 Round 之间 Loss 是上升的。
+* 看了之前训练的中间结果，前一两次和后面训练完，结果没什么变化。以及调整 Heatmap Variance 影响不大，prediction 依然无法聚集，只是 variance 变大，prediction 会模糊一些。
+* 已经六月底了，项目进度堪忧。
+
 
 
 <details>
