@@ -210,9 +210,12 @@
 
 ## 6.30 周三 (8h)
 * 更改 RF 更新模式，Sequential 或者 Avg，跑了一轮，没什么影响。avg 要更糊一些。两个效果都不好。
-* 想到，可能 KL Divergence 约束力不够，把两个分布约束成长得很像，但禁不起 argmax，可能更小的 KL Divergence 是通过拉平 Heatmap 达到，所以经过 argmax 算出来的坐标越来越不准，图片也糊。
+* 想到，可能 KL Divergence 约束力不够，它只能让两个分布的形状相似，但没有办法约束两个分布的最大值位置相同，也就是经过 argmax 以后的结果无法保证。可能这就是 Heatmap KL divergence 越训练越小，但坐标的 L1 Loss 越训练越大的原因。可能更小的 KL Divergence 是通过拉平 Heatmap 达到，所以经过 argmax 算出来的坐标越来越不准，图片也糊。
 * 看文献 "e2e learning of decision trees"，借鉴其退火算法，改好代码，明天跑出结果。
 * 现在跑一遍代码花费 15h, 颇慢。
+
+## 7.01 周四 (xh)
+* CNN 训练的时候 probability 不变成 one hot, 这个很明确。但 RF 训练的时候，CNN probability 不应该变成 one hot。昨天代码写错了，白跑一晚上。但也没白跑吧，coordinate loss 的数值是最近几周最小的，而且随着训练在下降，不容易。
 
 
 
