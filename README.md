@@ -221,9 +221,9 @@
 
 ## 7.02 周五 (xh)
 * 每轮 CNN 训完，训 Regression Tree 的时候，KL Loss 是上升的。这一段代码我单独拿出来测试过，可以收敛，不知道为什么放在网络里就不行，这个问题需要解决。
-* 看 torch.nn.KLDivLoss 具体是怎么计算的，有没有在整个图片上平均，导致 loss 很小。
+* 看 torch.nn.KLDivLoss() 具体是怎么计算的，有没有在整个图片上平均，导致 loss 很小。
 * 经过检查，KL loss 在 regression tree 训练过程中上升，但 L1 loss 在训练过程中是下降的，且对比 loss 变化曲线，RF_Iters 超参数，即 regression tree 每个 leaf node 更新轮次，取值为 60 合理。
-
+* 破案了，torch.nn.KLDivLoss(target,label) = torch.sum(label$\dot$(torch.log(label)-target))/n_elements, n_elements 是 target 所有元素的个数。所以是在整个 Heatmap 上平均了。
 
 
 <details>
