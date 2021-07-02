@@ -224,7 +224,7 @@
 * 看 torch.nn.KLDivLoss() 具体是怎么计算的，有没有在整个图片上平均，导致 loss 很小。
 * 经过检查，KL loss 在 regression tree 训练过程中上升，但 L1 loss 在训练过程中是下降的，且对比 loss 变化曲线，RF_Iters 超参数，即 regression tree 每个 leaf node 更新轮次，取值为 60 合理。
 * 破案了，torch.nn.KLDivLoss(target,label) = torch.sum(label * (torch.log(label)-target))/n_elements, n_elements 是 target 所有元素的个数。所以是在整个 Heatmap 上平均了。
-
+* 发现把 torch.nn.KLDivLoss(target,label) 改为 torch.nn.KLDivLoss(label,target), 那么 regression tree 训练的时候，loss 就下降了。但之前的代码也没白跑，只是 loss 的计算方式罢了，更新 leaf node 的函数没有错。
 
 <details>
 <summary>  <b> 7.05-7.11 </b > </summary>
