@@ -199,6 +199,9 @@
 * 跑了 Variance = 3, 增大 dim_tree = 6, Leaf Node 数量多了，效果没太大不同。
 </details>
 
+<details>
+<summary>  <b> 6.28-7.04 </b > </summary>
+
 ## 6.28 周一 (0h)
 * 朋友到访，畅聊一天。
 
@@ -219,19 +222,33 @@
 * 代码版本太多了，因为这周改了太多参数，搞得我有点混乱，得统一一个最新版，以后都在这个基础上改。
 * 得导师指导，1）数据太小，200 张图片，48 个 leaf node，参数太多，训不出来，得多用点图片。2）退火的参数可适当调整，不必按照文献里的，范围限定在 1-3, 可以试试更大的范围。3）CNN loss 太小，可能导致反向传播梯度很小，可以考虑提高学习率（但我觉得，目前的学习率下面，CNN 输出的 probability，对同一个样本，最大和最小 prob 能有一倍的差距，我认为 CNN 输出是有区分度的，学习率应该足够）。
 
-## 7.02 周五 (xh)
+## 7.02 周五 (3h)
 * 每轮 CNN 训完，训 Regression Tree 的时候，KL Loss 是上升的。这一段代码我单独拿出来测试过，可以收敛，不知道为什么放在网络里就不行，这个问题需要解决。
 * 看 torch.nn.KLDivLoss() 具体是怎么计算的，有没有在整个图片上平均，导致 loss 很小。
 * 经过检查，KL loss 在 regression tree 训练过程中上升，但 L1 loss 在训练过程中是下降的，且对比 loss 变化曲线，RF_Iters 超参数，即 regression tree 每个 leaf node 更新轮次，取值为 60 合理。
 * 破案了，torch.nn.KLDivLoss(target,label) = torch.sum(label * (torch.log(label)-target))/n_elements, n_elements 是 target 所有元素的个数。所以是在整个 Heatmap 上平均了。
 * 发现把 torch.nn.KLDivLoss(target,label) 改为 torch.nn.KLDivLoss(label,target), 那么 regression tree 训练的时候，loss 就下降了。但之前的代码也没白跑，只是 loss 的计算方式罢了，更新 leaf node 的函数没有错。
 
-<details>
-<summary>  <b> 7.05-7.11 </b > </summary>
+## 7.03 周六 (0h)
+* Colab GPU 使用过多，最近暂时不能用。
+* 聊天，别人的工作状态，生活态度，比我强太多。
+
+## 7.04 周日 (1h)
+* 看电影，做了之前堆积已久的杂事。
+
+</details>
+
 ## 7.05 周一 (xh)
 
 
-## 7.06.29 周二 (xh)
+## 7.06 周二 (xh)
+
+<details>
+<summary>  <b> 7.12-7.18 </b > </summary>
+## 7.12 周一 (xh)
+
+
+## 7.18 周二 (xh)
 
 
 </details>
