@@ -18,7 +18,7 @@
 | **6.07-6.13** | 实现 Heatmap Regression，所有待检测点在一张图上。后发现无法 argmax，且无法确定特征点顺序。改为每个点一张 Heatmap，实现代码得到初步结果。拟合效果还是很差。|
 | **6.14-6.20** | 将 Backbone 换成 Hourglass，由于 Pytorch 里没有现成的 Model，所以需要自己找代码自己 pretrain。将 Helen Dataset 封装上 Dataloader。重写 Phi 函数，将 Decision Tree 数量和深度定为全局变量。结论：效果依然不好。|
 | **6.21-6.27** | 解决预测结果一致问题，通过增大 leaf node 数量以及提高 CNN 训练 Iterations. CNN Loss 与 Regression Tress loss 须一致。跑通 KL Loss 训练代码，测试超参数 Heatmap Variance， CNN Iterations 和 Leaf Node 数量对预测结果的影响。结论：Heatmap 变化不大，散落的点无法聚拢。|
-| **6.28-7.04** | 解决训练时 Loss 上升问题，是函数误用，但参数更新方法是对的。太多需要调整的超参数，分别测试能否改进拟合精度，都失败。本周实验方向多，导致代码版本太多，非常耗费调试时间。意识到以后统一了一个最新代码。 |
+| **6.28-7.04** | 解决训练时 Loss 上升问题，是函数误用，但参数更新方法是对的。太多需要调整的超参数，分别测试能否改进拟合精度，都失败。本周实验方向多，导致代码版本太多，非常耗费调试时间。意识到问题以后统一最新版代码。 |
 
 
 # 日志
