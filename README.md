@@ -254,14 +254,13 @@
 * 按照最新的参数（来自 2000 张图的大数据集，拟合眼睛 12 个点，Round 6），NME 是 9.3, 距离 SOTA 3.3 尚有距离，但有希望。
 * 误差还能下降的几个理由：
 
-···
-1. Backbone 没对齐（人家可能用了 stacked Hourglass，而我只用了一个 Hourglass）
-2. Data Augmentation 全没做
-3. Landmarks 分组回归，尚未分组
-4. 参数（Tree 深度、Tree 数量）还没有细调
-5. 采用 Round 6 的权重，尚未 Converge
-6. 有人把 Heatmap 最高峰点向次高峰点偏移 1/4 个 pixel，我尚未采用
-···
+---->   1. Backbone 没对齐（人家可能用了 stacked Hourglass，而我只用了一个 Hourglass）
+---->   2. Data Augmentation 全没做
+---->   3. Landmarks 分组回归，尚未分组
+---->   4. 参数（Tree 深度、Tree 数量）还没有细调
+---->   5. 采用 Round 6 的权重，尚未 Converge
+---->   6. 有人把 Heatmap 最高峰点向次高峰点偏移 1/4 个 pixel，我尚未采用
+
 
 
 
