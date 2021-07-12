@@ -23,7 +23,7 @@
 
 # 日志
 <details>
-<summary>  <b> Week 0 ------ 5.26 - 5.30 </b > </summary>
+<summary>  <b> Week 0 ------>  5.26 - 5.30 </b > </summary>
   
 ## 5.26 周三 (6.5h)
 * 发现原始的 landmarks 坐标经过 Procuses 变换后丧失了缩放、旋转、位移的数值，导致跟图片无法对应。重新做数据处理，直接用 PCA, 然后归一化到 (0,1) 之间。保证与图片对应。
@@ -55,7 +55,7 @@
 </details>
 
 <details>
-<summary>  <b>  Week 1 ------ 5.31 - 6.06 </b > </summary>
+<summary>  <b>  Week 1 ------>  5.31 - 6.06 </b > </summary>
 
 ## 5.31 周一 (6.5h)
 * 今天主要任务是看文献。
@@ -95,7 +95,7 @@
 </details>
 
 <details>
-<summary>  <b>  Week 2 ------ 6.07 - 6.13 </b > </summary>
+<summary>  <b>  Week 2 ------>  6.07 - 6.13 </b > </summary>
   
 ## 6.07 周一 (8h)
 * 收敛了，代码完全没改过。来实验室第一件事，把上次的代码跑一遍看看。周末没想到还有什么可能的原因导致 CNN 输出一致，就给自己放了两天假，结果今天问题消失了。Adam 优化器，lr: 3e-4，其实这组参数上周五试过，不行，但今天就有了。神奇。把结果保存下来。本来已经做好了搞体力活的准备，挨个检查输出是不是跟手算的一样，检查梯度啥的，看来不用了。但稳定性为什么会是个问题，原因尚不明确，代码不能复现也不行啊。
@@ -132,7 +132,7 @@
 
 
 <details>
-<summary>  <b>  Week 3 ------ 6.14 - 6.20 </b > </summary>
+<summary>  <b>  Week 3 ------>  6.14 - 6.20 </b > </summary>
   
 ## 6.14 周一 (2h)
 * 看文献 Hourglass. 
@@ -165,7 +165,7 @@
 </details>
 
 <details>
-<summary>  <b>  Week 4 ------ 6.21 - 6.27 </b > </summary>
+<summary>  <b>  Week 4 ------>  6.21 - 6.27 </b > </summary>
   
 ## 6.21 周一 (0h)
 * 办事。不仅一天都奔波在路上，还起的鬼早，在地铁上站一路没座位。
@@ -199,7 +199,7 @@
 </details>
 
 <details>
-<summary>  <b>  Week 5 ------ 6.28 - 7.04 </b > </summary>
+<summary>  <b>  Week 5 ------>  6.28 - 7.04 </b > </summary>
 
 ## 6.28 周一 (0h)
 * 朋友到访，畅聊一天。
@@ -239,7 +239,7 @@
 
 
 <details>
-<summary>  <b>  Week 6 ------ 7.05 - 7.11 </b > </summary>
+<summary>  <b>  Week 6 ------>  7.05 - 7.11 </b > </summary>
   
 ## 7.05 周一 (5.5h)
 * 看 “Extreme points”, 企图解决 Heatmap 里多个特征点如何提取的问题。但是人家文章里不是解决这个问题的。
@@ -288,7 +288,8 @@
 
 
 ## 7.12 周一 (xh)
-
+* 根据 300W 数据集的组成部分，分别裁剪、整形，得到完整的 300W dataset 以及标签。
+* 完善训练代码，每轮 Regression Tree 训练完以后可以看到每个 Cluster 的拟合效果以及整个脸 landmarks 拟合情况。
 
 ## 7.18 周二 (xh)
 
