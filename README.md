@@ -19,7 +19,7 @@
 | **6.14-6.20** | 将 Backbone 换成 Hourglass，由于 Pytorch 里没有现成的 Model，所以需要自己找代码自己 pretrain。将 Helen Dataset 封装上 Dataloader。重写 Phi 函数，将 Decision Tree 数量和深度定为全局变量。结论：效果依然不好。|
 | **6.21-6.27** | 解决预测结果一致问题，通过增大 leaf node 数量以及提高 CNN 训练 Iterations. CNN Loss 与 Regression Tress loss 须一致。跑通 KL Loss 训练代码，测试超参数 Heatmap Variance， CNN Iterations 和 Leaf Node 数量对预测结果的影响。结论：Heatmap 变化不大，散落的点无法聚拢。|
 | **6.28-7.04** | 解决训练时 Loss 上升问题，是函数误用，但参数更新方法是对的。太多需要调整的超参数，分别测试能否改进拟合精度，都失败。本周实验方向多，导致代码版本太多，非常耗费调试时间。意识到问题以后统一最新版代码。 |
-
+| **7.05-7.11** | 在小数据集上实现收敛。更改 Backbone 为 Stacked Hourglass；找到 300W Bbox 文件并重新裁剪人脸；依据相关性为 Landmarks 分组；依据分组结果，每组分别给定 LeafNode 进行回归。|
 
 # 日志
 <details>
@@ -278,7 +278,7 @@
 * 找到 300W Bbox 文件，重新裁剪人脸。
 * 更改 Backbone，人家用四个 Hourglass，跟他们对齐。训练慢多了，且显存占用更多。
 
-## 7.11 周日 (xh)
+## 7.11 周日 (8h)
 * 依据 landmarks 分组结果，重写代码。将 Leaf_q 改为 Dict 格式，每组给定 num_tree 和 dim_tree，分别优化。代码大改，伤筋动骨。
 
 
