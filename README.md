@@ -237,6 +237,10 @@
 
 </details>
 
+
+<details>
+<summary>  <b> 7.05-7.11 </b > </summary>
+  
 ## 7.05 周一 (5.5h)
 * 看 “Extreme points”, 企图解决 Heatmap 里多个特征点如何提取的问题。但是人家文章里不是解决这个问题的。
 * 完善代码，今天不知何故，非常疲惫。
@@ -280,15 +284,23 @@
 
 ## 7.11 周日 (8h)
 * 依据 landmarks 分组结果，重写代码。将 Leaf_q 改为 Dict 格式，每组给定 num_tree 和 dim_tree，分别优化。代码大改，伤筋动骨。
+</details>
 
 
-
-<details>
-<summary>  <b> 7.12-7.18 </b > </summary>
 ## 7.12 周一 (xh)
 
 
 ## 7.18 周二 (xh)
+
+
+
+
+<details>
+<summary>  <b> 7.19-7.25 </b > </summary>
+## 7.19 周一 (xh)
+
+
+## 7.20 周二 (xh)
 
 
 </details>
