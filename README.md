@@ -292,7 +292,8 @@
 * 完善训练代码，每轮 Regression Tree 训练完以后可以看到每个 Cluster 的拟合效果以及整个脸 landmarks 拟合情况。
 
 ## 7.18 周二 (xh)
-
+* 修复训练代码中的错误若干
+* 完成测试代码，返回 NME, Failure Rate, 以及 AUC。同时可以绘出预测时的 Landmarks 坐标。
 
 
 
