@@ -295,10 +295,10 @@
 * 修复训练代码中的错误若干
 * 完成测试代码，返回 NME, Failure Rate, 以及 AUC。同时可以绘出预测时的 Landmarks 坐标。
 
-## 7.14 周三 (xh)
+## 7.14 周三 (9.5h)
 * 裁剪 COFW Dataset，这个 mat 文件标注 bbox 用 (x,y,len,hight)，标注 lamdmarks 用 (x1,x2,x3...,y1,y2,y3...)。跟 300W 不一样，卡了我半天。BTW, 300W 标注 bbox 用 (x1,y1,x2,y2)，lamdmarks 用 (x1,y1,x2,y2,...).
 * Backbone 做的有点问题，Stacked HourGlass 出来以后应该分别接 10 个 Layer，做 channel 的降维、Batchnorm 之类，得到每组 Heatmap. 需要重新 pretrain. Fine tune 的时候，每个 Layer 最后加 linear 变成跟 tree 形状相同，再过 Phi 函数得到 Probability. 
-
+* 睡前改完模型，睡觉时跑 Pretrain.
 
 
 ## 7.15 周四 (xh)
