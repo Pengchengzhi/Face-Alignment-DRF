@@ -305,7 +305,8 @@
 * 发现 RF 训练时可以采用更大 Batchsize, 可以提高速度。
 
 ## 7.16 周五
-* 做组会汇报
+* 昨天的三组对比试验，1) Increase Dim_tree by 1; 2) Increase Num_tree by 1; 3) Fit Common Test set，都宣告失败。我认为 leaf node 数量已足够多，应该是每组 landmarks 共享的部分太多，各自分支的部分不够。下一步更改 Hourglass 出来的 Branch，在小数据集上测试能否收敛。
+* Coding, 改好小数据集上的训练代码，继续搞对比试验。
 
 
 <details>
