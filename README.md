@@ -313,7 +313,7 @@
 * 专门租了 48G 显存的 A6000 跑第二个实验，跑了 18 小时。两组都没能收敛，有点绝望。
 
 ## 7.18 周日
-* 我悟了，pretrain 以后 Hourglass 出来 Heatmap，也就是说这里几乎都是 0 ，只有少数几个点有值。再走到后面 Conv ReLU Pool 以后咋还能出结果呢，那不就大部分都是 0 ，少数点有值。应该重跑实验，不 pretrain 看看结果。
+* 我悟了，pretrain 以后 Hourglass 出来 Heatmap，也就是说这里几乎都是 0 ，只有少数几个点有值。再走到后面 Conv ReLU Pool 以后咋还能出结果呢，那不就大部分都是 0 ，少数点有值。应该重跑实验，不 pretrain 直接训，看看结果。
 
 <details>
 <summary>  <b> 7.19-7.25 </b > </summary>
