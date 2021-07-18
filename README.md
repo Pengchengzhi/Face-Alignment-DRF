@@ -314,6 +314,7 @@
 
 ## 7.18 周日
 * 我悟了，pretrain 以后 Hourglass 出来 Heatmap，也就是说这里几乎都是 0 ，只有少数几个点有值。再走到后面 Conv ReLU Pool 以后咋还能出结果呢，那不就大部分都是 0 ，少数点有值。应该重跑实验，不 pretrain 直接训，看看结果。
+* 尝试每个分支出来分别做 loss 再反向传播。不收敛。在分别做 loss 的基础上，改 Backbone Hourglass 数量、把 Hourglass 移到每个 Branch、改每个 branch 最后的 Conv 结构，均失败。
 
 <details>
 <summary>  <b> 7.19-7.25 </b > </summary>
