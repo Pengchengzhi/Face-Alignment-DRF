@@ -310,7 +310,7 @@
 
 ## 7.17 周六
 * 两组对比试验：1) Backbone 为 Stacked Hourglass 不变，每个分支由先 1x1 Conv 减小层数，再 Pool 和 FC 改为直接用 3x3 Conv 同时减少层数和图的大小，考虑到可以同时捕捉层之间、以及层内联系。2） Backbone 换成一个 Hourglass, 出来以后每个 Branck 再接一个 Hourglass，再 Conv, Linear. 通过让每个分支有自己的 Hourglass，降低分支之间共享的信息，希望他们能学到各自不同的对应关系，从而得到选择 Leaf node Heatmap 的概率。
-* 两组实验都没能收敛，有点绝望。
+* 专门租了 48G 显存的 A6000 跑第二个实验，跑了 18 小时。两组都没能收敛，有点绝望。
 
 
 <details>
