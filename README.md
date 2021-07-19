@@ -286,6 +286,8 @@
 * 依据 landmarks 分组结果，重写代码。将 Leaf_q 改为 Dict 格式，每组给定 num_tree 和 dim_tree，分别优化。代码大改，伤筋动骨。
 </details>
 
+<details>
+<summary>  <b>  Week 7 ------>  7.12 - 7.18 </b > </summary>
 
 ## 7.12 周一
 * 根据 300W 数据集的组成部分，分别裁剪、整形，得到完整的 300W dataset 以及标签。
@@ -316,12 +318,24 @@
 * 我悟了，pretrain 以后 Hourglass 出来 Heatmap，也就是说这里几乎都是 0 ，只有少数几个点有值。再走到后面 Conv ReLU Pool 以后咋还能出结果呢，那不就大部分都是 0 ，少数点有值。应该重跑实验，不 pretrain 直接训，看看结果。
 * 尝试每个分支出来分别做 loss 再反向传播。不收敛。在分别做 loss 的基础上，改 Backbone Hourglass 数量、把 Hourglass 移到每个 Branch、改每个 branch 最后的 Conv 结构，均失败。
 
+</details>
+
+## 7.19 周一
+* 之前都能拟合，现在不行了，怎么可能呢？不说提高精度，至少保持水平还是没问题的吧。重跑上次成功拟合的代码，改数据集为 500 张图。改分支结构、改学习率。训练集由 200 张图逐步迁移到 3000 张图还能拟合就好了。
+* 可能叶节点数量不够，1) 500 图训练集，12 landmarks，测试 num tree = 3, 6, 10. 2) 尝试拟合全部数据集，叶节点由 48 搞到 200 左右。看看能否拟合。
+* Colab GPU 限额达到，24 小时不能使用 GPU ，即便已经充值 pro 。
+* 在 500 图数据集上增加 num tree, 拟合结果在变好，可能确实是 Leaf Node 数量不足的问题。
+
+## 7.20 周二
+
+
+
 <details>
-<summary>  <b> 7.19-7.25 </b > </summary>
-## 7.19 周一 (xh)
+<summary>  <b>  Week 9 ------>  7.26 - 8.01 </b > </summary>
+## 7.26 周一
 
 
-## 7.20 周二 (xh)
+## 7.27 周二
 
 
 </details>
