@@ -329,6 +329,9 @@
 ## 7.20 周二
 * 学习使用 Docker, 静待代码跑出结果。
 
+## 7.21 周三
+* 基本搞清楚 Docker 的用法，捡到 nohup 和 tmux 两个宝藏。
+* 代码依旧没有收敛，现在 Leaf Node 已经 5G 了，非常臃肿。不能再用增加 Leaf Node 的方法。打算以一种更基本的方式解耦，输出 (B, 68, Nleaf) 的概率，每个 Landmarks 由一池子 Leaf Node 挑选而出。今天完成代码，等待训练结果，验证猜想。
 
 <details>
 <summary>  <b>  Week 9 ------>  7.26 - 8.01 </b > </summary>
