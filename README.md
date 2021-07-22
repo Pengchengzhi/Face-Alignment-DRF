@@ -333,6 +333,14 @@
 * 基本搞清楚 Docker 的用法，捡到 nohup 和 tmux 两个宝藏。
 * 代码依旧没有收敛，现在 Leaf Node 已经 5G 了，非常臃肿。不能再用增加 Leaf Node 的方法。打算以一种更基本的方式解耦，输出 (B, 68, Nleaf) 的概率，每个 Landmarks 由一池子 Leaf Node 挑选而出。今天完成代码，等待训练结果，验证猜想。
 
+## 7.22 周四
+* 优化了更新 Leaf Node 的代码，这个地方非常慢，现在快一些了。
+* 昨天的代码有诸多问题，今天 debug，彻底完成了新的训练代码。等待结果。
+* 将 Leaf Node 初始化写成在平面上均匀分布，但第一轮 CNN 并不能挑出最合适的 Leaf node。怀疑是 KL Div Loss 约束不够，在 label heatmap 广阔的 0 的地方，prediction 怎样都行，因为会乘以 0，所以无法挑选。但我更换了 L2 Loss 和 KL( pred, label ) + KL( 1-pred, 1-label )，也没有办法在第一轮选出最合适的 leaf node. 奇怪。
+
+
+
+
 <details>
 <summary>  <b>  Week 9 ------>  7.26 - 8.01 </b > </summary>
 ## 7.26 周一
