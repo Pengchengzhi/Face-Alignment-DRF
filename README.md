@@ -15,6 +15,8 @@
 | **Week 4** | **6.21-6.27** | 解决预测结果一致问题，通过增大 leaf node 数量以及提高 CNN 训练 Iterations. CNN Loss 与 Regression Tress loss 须一致。跑通 KL Loss 训练代码，测试超参数 Heatmap Variance， CNN Iterations 和 Leaf Node 数量对预测结果的影响。结论：Heatmap 变化不大，散落的点无法聚拢。|
 | **Week 5** | **6.28-7.04** | 解决训练时 Loss 上升问题，是函数误用，但参数更新方法是对的。太多需要调整的超参数，分别测试能否改进拟合精度，都失败。本周实验方向多，导致代码版本太多，非常耗费调试时间。意识到问题以后统一最新版代码。 |
 | **Week 6** | **7.05-7.11** | 在小数据集上实现收敛。更改 Backbone 为 Stacked Hourglass；找到 300W Bbox 文件并重新裁剪人脸；依据相关性为 Landmarks 分组；依据分组结果，每组分别给定 LeafNode 进行回归。|
+| **Week 7** | **7.12-7.18** | 裁剪 300W 数据集。修改好训练代码。发现训练无法收敛，从理论上分析原因：可能是不同分支共享的信息太多、Leaf Node 数量不足、Pretrain 对齐到 Heatmap. 并做了几组对比实验验证猜想。 |
+| **Week 8** | **7.19-7.25** | 确定了问题出在 Leaf Node 数量不足，意识到增加 Leaf Node 不能解决问题，因为需要 Leaf Node 数量过多，模型太臃肿，且训练速度很慢。提出新的模型结构，为每个 Landmark 在同样的 Leaf Node 海洋中挑选。这样能显著降低 Leaf Node 需要的数量。在小数据集上的结果现实，能初步收敛。 |
 
 # 日志
 <details>
