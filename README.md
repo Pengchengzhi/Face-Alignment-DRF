@@ -364,6 +364,7 @@
 ## 7.27 周二
 * Batch Size 过大，会导致 Round 2 时报错 CUDA out of memory，修改小 batch，重跑主程序。
 * 最近一个月用眼过度，今日看书休息。
+* 看马毅 ReduNet，准备下周 Paper Reading 汇报。
 
 
 
